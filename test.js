@@ -34,6 +34,7 @@ var BASIC_TESTS = [
   ['carnivorous', 'carnivorous'],
   ['only', 'only'],
   ['aircraft', 'aircraft'],
+  ['feedback', 'feedback'],
   // Latin.
   ['veniam', 'veniam'],
   // Pluralization.
