@@ -784,6 +784,36 @@ describe('pluralize', function () {
     });
   });
 
+  describe('case handling', function () {
+    describe('plural', function () {
+      it('title cased words', function () {
+        expect(pluralize.plural('Canvas')).to.equal('Canvases');
+        expect(pluralize.plural('Stoma')).to.equal('Stomata');
+        expect(pluralize.plural('Man')).to.equal('Men');
+      });
+
+      it('upper cased words', function () {
+        expect(pluralize.plural('CANVAS')).to.equal('CANVASES');
+        expect(pluralize.plural('STOMA')).to.equal('STOMATA');
+        expect(pluralize.plural('MAN')).to.equal('MEN');
+      });
+    });
+
+    describe('singular', function () {
+      it('title cased words', function () {
+        expect(pluralize.singular('Canvases')).to.equal('Canvas');
+        expect(pluralize.singular('Stomata')).to.equal('Stoma');
+        expect(pluralize.singular('Men')).to.equal('Man');
+      });
+
+      it('upper cased words', function () {
+        expect(pluralize.singular('CANVASES')).to.equal('CANVAS');
+        expect(pluralize.singular('STOMATA')).to.equal('STOMA');
+        expect(pluralize.singular('MEN')).to.equal('MAN');
+      });
+    });
+  });
+
   describe('adding new rules', function () {
     it('uncountable rules', function () {
       expect(pluralize('paper')).to.equal('papers');
