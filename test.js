@@ -34,6 +34,16 @@ var BASIC_TESTS = [
   ['carnivorous', 'carnivorous'],
   ['only', 'only'],
   ['aircraft', 'aircraft'],
+  ['advice', 'advice'],
+  ['information', 'information'],
+  ['equipment', 'equipment'],
+  ['software', 'software'],
+  ['hardware', 'hardware'],
+  ['homework', 'homework'],
+  ['music', 'music'],
+  ['research', 'research'],
+  ['traffic', 'traffic'],
+  ['wealth', 'wealth'],
   // Latin.
   ['veniam', 'veniam'],
   // Pluralization.
