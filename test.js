@@ -669,7 +669,14 @@ var BASIC_TESTS = [
   ['Order2', 'Order2s'],
   ['Work Order2', 'Work Order2s'],
   ['SoundFX2', 'SoundFX2s'],
-  ['oDonald', 'oDonalds']
+  ['oDonald', 'oDonalds'],
+  // Case handling.
+  ['Canvas', 'Canvases'],
+  ['CANVAS', 'CANVASES'],
+  ['Stoma', 'Stomata'],
+  ['STOMA', 'STOMATA'],
+  ['Man', 'Men'],
+  ['MAN', 'MEN']
 ];
 
 /**
